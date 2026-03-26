@@ -5,13 +5,14 @@ type Lang = "zh" | "en";
 const copy = {
   zh: {
     langButton: "EN",
-    heroTitle: "香港拾遗",
+    heroTitle: "香港遗迹与复兴",
     heroSubtitle: "在飞速发展的城市中，见证消亡，并在当下重新连接。",
     archiveTitle: "已抹去的记忆",
     archiveTitleEn: "The Lost Archives",
     archiveHint: "悬停查看消失原因",
     gachaTitle: "把握当下：抽取你的文化盲盒",
     gachaButton: "点击抽签",
+    
     gachaRolling: "抽签进行中",
     gachaReady: "下一个目的地",
     mapButton: "查看地图",
@@ -222,7 +223,7 @@ const heritageGachaSpots = [
 ];
 
 export default function Home() {
-  const [lang, setLang] = useState<Lang>("zh");
+  const [lang, setLang] = useState<Lang>("en");
   const [isDrawing, setIsDrawing] = useState(false);
   const [rollingIndex, setRollingIndex] = useState(0);
   const [drawnSpot, setDrawnSpot] = useState<(typeof heritageGachaSpots)[number] | null>(null);
